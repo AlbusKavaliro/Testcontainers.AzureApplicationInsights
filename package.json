@@ -1,7 +1,7 @@
 {
     "name": "hangy.Testcontainers.AzureApplicationInsights",
     "devDependencies": {
-        "@codedependant/semantic-release-docker": "^5.1.0",
+        "@codedependant/semantic-release-docker": "^5.1.1",
         "@droidsolutions-oss/semantic-release-nuget": "^2.0.1",
         "@droidsolutions-oss/semantic-release-update-file": "^1.4.0",
         "@semantic-release/changelog": "^6.0.3",
