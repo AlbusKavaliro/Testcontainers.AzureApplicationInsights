@@ -79,19 +79,19 @@ jobs:
           REPOSITORY: ${{ env.IMAGE_NAME }}
         run: npx semantic-release
       - name: Generate artifact attestation linux-x64
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v3
         with:
           subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
           subject-digest: ${{ steps.release.outputs.HASH_x64 }}
           push-to-registry: true
       - name: Generate artifact attestation linux-arm
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v3
         with:
           subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
           subject-digest: ${{ steps.release.outputs.HASH_arm }}
           push-to-registry: true
       - name: Generate artifact attestation linux-arm64
-        uses: actions/attest-build-provenance@v2
+        uses: actions/attest-build-provenance@v3
         with:
           subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME}}
           subject-digest: ${{ steps.release.outputs.HASH_arm64 }}
