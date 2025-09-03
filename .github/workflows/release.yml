@@ -13,7 +13,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: AlbusKavaliro/azure-appinsights-emulator
+  IMAGE_NAME: albuskavaliro/azure-appinsights-emulator
 
 jobs:
   release:
