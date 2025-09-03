@@ -211,7 +211,7 @@
           "xunit.v3.runner.common": "[2.0.3]"
         }
       },
-      "hangy.testcontainers.azureapplicationinsights": {
+      "AlbusKavaliro.testcontainers.azureapplicationinsights": {
         "type": "Project",
         "dependencies": {
           "Testcontainers": "[4.6.0, )"

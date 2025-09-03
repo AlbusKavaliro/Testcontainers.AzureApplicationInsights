@@ -2,7 +2,7 @@ using System.Net.Http.Json;
 using Microsoft.ApplicationInsights;
 using Microsoft.ApplicationInsights.Extensibility;
 
-namespace hangy.Testcontainers.AzureApplicationInsights.Test;
+namespace AlbusKavaliro.Testcontainers.AzureApplicationInsights.Test;
 
 public class IntegrationTest
 {
@@ -17,13 +17,13 @@ public class IntegrationTest
         {
             builder = builder.WithImage(imageName);
         }
-        
+
         AppInsightsContainer container = builder.Build();
 
         await container.StartAsync(TestContext.Current.CancellationToken);
 
         using (TelemetryConfiguration configuration = TelemetryConfiguration.CreateDefault())
-        {            
+        {
             configuration.ConnectionString = container.GetConnectionString();
             TelemetryClient client = new (configuration);
             client.TrackTrace("Hello, World!");

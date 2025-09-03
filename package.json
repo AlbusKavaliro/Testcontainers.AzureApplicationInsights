@@ -1,5 +1,5 @@
 {
-    "name": "hangy.Testcontainers.AzureApplicationInsights",
+    "name": "AlbusKavaliro.Testcontainers.AzureApplicationInsights",
     "devDependencies": {
         "@codedependant/semantic-release-docker": "^5.1.1",
         "@droidsolutions-oss/semantic-release-nuget": "^2.0.1",
@@ -7,7 +7,7 @@
         "@semantic-release/changelog": "^6.0.3",
         "@semantic-release/exec": "^7.1.0",
         "@semantic-release/git": "^10.0.1",
-        "semantic-release": "^24.2.6"
+        "semantic-release": "^24.2.7"
     },
     "release": {
         "branches": [
@@ -52,7 +52,7 @@
         ],
         "npmPublish": false,
         "projectPath": [
-            "src/hangy.Testcontainers.AzureApplicationInsights/hangy.Testcontainers.AzureApplicationInsights.csproj"
+            "src/AlbusKavaliro.Testcontainers.AzureApplicationInsights/AlbusKavaliro.Testcontainers.AzureApplicationInsights.csproj"
         ],
         "includeSymbols": true,
         "files": [

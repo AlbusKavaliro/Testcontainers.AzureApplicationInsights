@@ -1,0 +1,8 @@
+<Solution>
+    <Project Path="src\AppHost\AppHost.csproj" />
+    <Project Path="src\ServiceDefaults\ServiceDefaults.csproj" />
+    <Project Path="src\AlbusKavaliro.Testcontainers.AzureApplicationInsights\AlbusKavaliro.Testcontainers.AzureApplicationInsights.csproj" />
+    <Project Path="src\AlbusKavaliro.Testcontainers.AzureApplicationInsights.Server\AlbusKavaliro.Testcontainers.AzureApplicationInsights.Server.csproj" />
+    <Project Path="src\AlbusKavaliro.Testcontainers.AzureApplicationInsights.TestClient\AlbusKavaliro.Testcontainers.AzureApplicationInsights.TestClient.csproj" />
+    <Project Path="test\AlbusKavaliro.Testcontainers.AzureApplicationInsights.Test\AlbusKavaliro.Testcontainers.AzureApplicationInsights.Test.csproj" />
+</Solution>

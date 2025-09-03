@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <RootNamespace>hangy.Testcontainers.AzureApplicationInsights.Test</RootNamespace>
+    <RootNamespace>AlbusKavaliro.Testcontainers.AzureApplicationInsights.Test</RootNamespace>
     <TestingPlatformDotnetTestSupport>false</TestingPlatformDotnetTestSupport>
     <UseMicrosoftTestingPlatformRunner>true</UseMicrosoftTestingPlatformRunner>
   </PropertyGroup>
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\hangy.Testcontainers.AzureApplicationInsights\hangy.Testcontainers.AzureApplicationInsights.csproj" />
+    <ProjectReference Include="..\..\src\AlbusKavaliro.Testcontainers.AzureApplicationInsights\AlbusKavaliro.Testcontainers.AzureApplicationInsights.csproj" />
   </ItemGroup>
 
 </Project>

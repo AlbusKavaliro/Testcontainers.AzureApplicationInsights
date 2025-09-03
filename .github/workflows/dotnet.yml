@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
         with:
@@ -33,7 +33,7 @@ jobs:
       - name: Build
         run: dotnet build -c Debug --no-restore
       - name: Build container
-        run: dotnet publish -c Debug --no-restore --os linux --arch x64 /t:PublishContainer -p ContainerRepository=azure-appinsights-emulator --getProperty:GeneratedContainerDigest src/hangy.Testcontainers.AzureApplicationInsights.Server/hangy.Testcontainers.AzureApplicationInsights.Server.csproj
+        run: dotnet publish -c Debug --no-restore --os linux --arch x64 /t:PublishContainer -p ContainerRepository=azure-appinsights-emulator --getProperty:GeneratedContainerDigest src/AlbusKavaliro.Testcontainers.AzureApplicationInsights.Server/AlbusKavaliro.Testcontainers.AzureApplicationInsights.Server.csproj
       - name: Test
         run: dotnet test -c Debug --no-build -p:TestingPlatformCommandLineArguments="--report-trx --coverage --coverage-output-format cobertura --coverage-output coverage.cobertura.xml" -f net9.0
         env:
@@ -46,7 +46,7 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: hangy/Testcontainers.AzureApplicationInsights
+          slug: AlbusKavaliro/Testcontainers.AzureApplicationInsights
       - name: Upload test results to Codecov
         if: ${{ !cancelled() }}
         uses: codecov/test-results-action@v1
