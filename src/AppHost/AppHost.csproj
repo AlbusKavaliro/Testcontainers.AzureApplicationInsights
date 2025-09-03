@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\hangy.Testcontainers.AzureApplicationInsights.Server\hangy.Testcontainers.AzureApplicationInsights.Server.csproj" />
-    <ProjectReference Include="..\hangy.Testcontainers.AzureApplicationInsights.TestClient\hangy.Testcontainers.AzureApplicationInsights.TestClient.csproj" />
+    <ProjectReference Include="..\AlbusKavaliro.Testcontainers.AzureApplicationInsights.Server\AlbusKavaliro.Testcontainers.AzureApplicationInsights.Server.csproj" />
+    <ProjectReference Include="..\AlbusKavaliro.Testcontainers.AzureApplicationInsights.TestClient\AlbusKavaliro.Testcontainers.AzureApplicationInsights.TestClient.csproj" />
   </ItemGroup>
 
 </Project>

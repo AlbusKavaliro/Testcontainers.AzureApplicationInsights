@@ -1,7 +1,7 @@
 using Docker.DotNet.Models;
 using DotNet.Testcontainers.Configurations;
 
-namespace hangy.Testcontainers.AzureApplicationInsights;
+namespace AlbusKavaliro.Testcontainers.AzureApplicationInsights;
 
 /// <inheritdoc cref="ContainerConfiguration" />
 public class AppInsightsConfiguration : ContainerConfiguration

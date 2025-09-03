@@ -2,16 +2,16 @@
 using DotNet.Testcontainers.Builders;
 using DotNet.Testcontainers.Configurations;
 
-namespace hangy.Testcontainers.AzureApplicationInsights;
+namespace AlbusKavaliro.Testcontainers.AzureApplicationInsights;
 
 /// <inheritdoc cref="ContainerBuilder{TBuilderEntity, TContainerEntity, TConfigurationEntity}" />
 /// <remarks>
 /// Builds a container running the an Azure Application Insights emulator:
-/// https://github.com/hangy/Testcontainers.AzureApplicationInsights/.
+/// https://github.com/AlbusKavaliro/Testcontainers.AzureApplicationInsights/.
 /// </remarks>
 public class AppInsightsBuilder : ContainerBuilder<AppInsightsBuilder, AppInsightsContainer, AppInsightsConfiguration>
 {
-    public const string AppInsightsImage = "ghcr.io/hangy/azure-appinsights-emulator:latest";
+    public const string AppInsightsImage = "ghcr.io/AlbusKavaliro/azure-appinsights-emulator:latest";
 
     public const ushort AppInsightsPort = 8080;
 

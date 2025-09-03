@@ -1,0 +1,6 @@
+@AlbusKavaliro.Testcontainers.AzureApplicationInsights.TestClient_HostAddress = http://localhost:5072
+
+GET {{AlbusKavaliro.Testcontainers.AzureApplicationInsights.TestClient_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
