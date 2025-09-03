@@ -11,7 +11,7 @@ namespace AlbusKavaliro.Testcontainers.AzureApplicationInsights;
 /// </remarks>
 public class AppInsightsBuilder : ContainerBuilder<AppInsightsBuilder, AppInsightsContainer, AppInsightsConfiguration>
 {
-    public const string AppInsightsImage = "ghcr.io/AlbusKavaliro/azure-appinsights-emulator:latest";
+    public const string AppInsightsImage = "ghcr.io/albuskavaliro/azure-appinsights-emulator:latest";
 
     public const ushort AppInsightsPort = 8080;
 
